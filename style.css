@@ -3,7 +3,6 @@
     margin: 0;
 }
 body{
-
     background-color: #202124;
     margin:0;
     width: 100%;
@@ -20,27 +19,69 @@ body{
     height: 80vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;   
 }
+
 
 #logo{
     height: 92px;
     margin-bottom: 20px;
 }
-
-
-
-input.busqueda{
+.busqueda{
+    display: flex;
+    background-color: transparent;
+    border: transparent;
+    width: 40px;
+    height: 40px;
+    padding-top: 3px;
+    padding-left: 7px;
+    width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    
+ /*   background-image: url('lupa.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 15px center; 
+    padding-left: 50px; */
+}
+.lupita{
+    /*size: 25px;*/
+    display: flex;
+    padding-left: 8px;
+    padding-top: 3px;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: end;
+}
+.camara{
+    padding-left: 60px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    width: 27px;
+    height: 34px;
+    align-items: center;
+}
+.microfono{
+   /* padding-left: 550px;*/
+    
+    padding-bottom: 25px;
+    width: 27px;
+    height: 34px;
+    align-items: center;
+}
+.encierro{
+    display: flex;
     background-color: transparent;
     border-radius:20px;
     width: 584px;
     height: 40px;
     border: 1px solid grey;
     color: white;
-    background-image: url('lupa.png');
-    background-size: 25px;
-    background-repeat: no-repeat;
-    background-position: 15px center; 
-    padding-left: 50px;
 }
 button{
     background-color: #303134;
@@ -58,7 +99,7 @@ button{
 .centrado#padding{
     padding-bottom: 20px;
 }
-.footer_uno{
+/*.footer_uno{
     display: flex;
     flex-direction: column;
     background-color: #171717;
@@ -81,7 +122,7 @@ justify-content: flex-end;
     justify-content: flex-end;
     flex-direction: column-reverse;
     display: flexbox;
-}
+}*/
 #menu{
     display: flex;
     justify-content: flex-end;
@@ -102,15 +143,39 @@ justify-content: flex-end;
     padding-top: 10px;
     align-items: center;
 }
-
 .imag_camara{
 padding-top: 5px;
 padding-bottom: 2px;
 padding-right: 5px;
 align-items: center;
 }
-
 .link:hover{
     color: lightgray;
     text-decoration: underline;
+}
+.colombia{
+    display: flex;
+    align-items: initial;
+    justify-content: initial;
+}
+.footerGrande{
+    display: flex;
+    background-color: #202124;
+    padding: 1px 1px;
+}
+.footerIzq{
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    width: 100%;
+
+}
+.footerDer{
+    display: flex;
+    justify-content: flex-end;   
+}
+footer{
+    display: flex;
+    flex-flow:column;
+    background-color: #202124;
 }
